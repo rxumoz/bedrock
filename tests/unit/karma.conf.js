@@ -64,6 +64,8 @@ module.exports = function (config) {
             'tests/unit/spec/careers/params.js',
             'tests/unit/spec/firefox/all/all-downloads-unified.js',
             'tests/unit/spec/firefox/new/common/thanks.js',
+            'tests/unit/spec/glean/elements.js',
+            'tests/unit/spec/glean/page.js',
             'tests/unit/spec/externalpages/pocket/mobile-nav.js',
             'tests/unit/spec/products/vpn/affiliate-attribution.js',
             {

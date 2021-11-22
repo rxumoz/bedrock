@@ -1,0 +1,143 @@
+---
+$schema: moz://mozilla.org/schemas/glean/metrics/2-0-0
+
+page:
+  viewed:
+    type: datetime
+    lifetime: application
+    send_in_pings:
+      - page-view
+      - interaction
+    description: |
+      The time a page was viewed.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  id:
+    type: string
+    lifetime: application
+    send_in_pings:
+      - page-view
+      - interaction
+    description: |
+      The ID of the page that was viewed.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  locale:
+    type: string
+    lifetime: application
+    send_in_pings:
+      - page-view
+      - interaction
+    description: |
+      The locale of the page that was viewed.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  url:
+    type: string
+    lifetime: application
+    send_in_pings:
+      - page-view
+      - interaction
+    description: |
+      The full page URL including locale,
+      path and query parameters.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  referrer:
+    type: string
+    lifetime: application
+    send_in_pings:
+      - page-view
+      - interaction
+    description: |
+      The referring URL that linked to this page.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+
+element:
+  label:
+    type: string
+    lifetime: ping
+    send_in_pings:
+      - interaction
+    description: |
+      Text label of the page element that was clicked e.g.
+      'Download Firefox', 'Get Mozilla VPN'.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  type:
+    type: string
+    lifetime: ping
+    send_in_pings:
+      - interaction
+    description: |
+      The type of the page element that was clicked
+      e.g. 'link', 'button'.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never
+  position:
+    type: string
+    lifetime: ping
+    send_in_pings:
+      - interaction
+    description: |
+      The page position of the link that was clicked
+      e.g. 'primary', 'secondary', 'navigation', 'footer'.
+    data_sensitivity:
+      - web_activity
+    bugs:
+      - https://github.com/mozilla/bedrock/issues/10746
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - marketing-websites-team@mozilla.com
+    expires: never

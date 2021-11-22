@@ -142,6 +142,10 @@
       {% endif %}
     {% endblock %}
 
+    {% block glean_client %}
+      {{ js_bundle('glean') }}
+    {% endblock %}
+
     <!--[if !IE]><!-->
     {% block js %}{% endblock %}
 
